@@ -1,0 +1,338 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px, 10px / 16px = 62.5%; */
+
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  padding: 3rem;
+  background-size: cover;
+}
+
+/* Header section */
+
+.header {
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right bottom,
+    rgba(164,251,237, 0.7),
+    rgba(248,7,89, 0.7)),
+  url('../images/hero.jpg');
+  height: 35rem;
+  background-size: cover;
+  padding: 14rem;
+}
+
+.heading-main--large {
+  font-size: 5.2rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.heading-main--sub {
+  font-size: 3.1rem;
+  letter-spacing: .5rem;
+}
+
+/* Form section */
+
+.facilities-form {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.8rem;
+  background-image: linear-gradient(to right bottom,
+    rgba(228,18,96, 1),
+    rgba(248,7,89, 1));
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.facilities-form__buttons {
+
+}
+
+[class^="facilities-form__buttons-"] {
+  display: inline-block;
+  padding: .8rem;
+  background-color: white;
+  border-radius: .3rem;
+  margin: 0 .5rem;
+}
+
+label {
+  margin-right: .2rem;
+  padding: 1rem;
+  color: #808080;
+}
+
+.input-button {
+  /* display: none; */
+}
+
+#submitButton {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  border: none;
+  color: white;
+  background-color: #bc4e9c;
+  margin-top: 1rem;
+}
+
+#submitButton:hover {
+  cursor: pointer;
+  width: 15rem;
+  opacity: .8;
+}
+
+
+/* Results section */
+
+.results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.hotel {
+  margin: 0 2rem;
+  width: 30%;
+}
+
+.hotel__details {
+  margin: 1rem 0;
+}
+
+.hotel__details--name {
+  font-size: 3rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.hotel__details--starRating {
+  font-size: 1.8rem;
+  display: inline-block;
+  color: #ff8c00;
+}
+
+.hotel__image {
+  opacity: .5;
+  border-radius: .4rem;
+  width: 100%;
+}
+
+.hotel__image:hover {
+  opacity: 1;
+
+}
+
+/* Tablet landscape media query break point */
+
+@media only screen and (max-device-width: 1200px) {
+  /* Header section */
+  .header {
+    height: 30rem;
+    padding: 12rem;
+  }
+
+  .heading-main--large {
+    font-size: 4.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .heading-main--sub {
+    font-size: 2.6rem;
+  }
+
+  .facilities-form {
+    font-size: 2.2rem;
+  }
+
+  [class^="facilities-form__buttons-"] {
+    padding: 1rem;
+    border-radius: 0.8rem;
+    margin: 0px .8rem;
+  }
+
+  .hotel {
+    width: 29%;
+  }
+
+}
+
+
+/* Tablet portrait media query break point */
+
+@media only screen and (max-device-width: 900px) {
+  body {
+    padding: 0;
+
+  }
+
+  /* Header section */
+  .header {
+    height: 25rem;
+    padding: 10rem;
+    width: 100%;
+  }
+
+  .heading-main--large {
+    font-size: 4.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .heading-main--sub {
+    font-size: 2.6rem;
+  }
+
+  /* Facilities form section */
+
+  .facilities-form {
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: .4rem;
+  }
+
+  label {
+    padding: .6rem;
+  }
+
+  [class^="facilities-form__buttons-"] {
+    padding: .5rem;
+    border-radius: .4rem;
+    margin: .3rem;
+  }
+
+  #submitButton {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  #submitButton:hover {
+    width: 10rem;
+  }
+
+  /* Results section */
+  .results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .hotel {
+    width: 44%;
+  }
+
+  .hotel__details--name {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  .hotel__image {
+    width: 36rem;
+  }
+}
+
+/* Mobile media query break point */
+
+@media only screen and (max-device-width: 600px) {
+  body {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Header section */
+  .header {
+    height: 20rem;
+    padding: 3.5rem;
+  }
+
+  .heading-main--large {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .heading-main--sub {
+    font-size: 2.1rem;
+  }
+
+  /* Facilities form section */
+
+  .facilities-form {
+    font-size: 1.3rem;
+    padding: .8rem;
+    margin-bottom: .4rem;
+  }
+
+  label {
+    padding: .4rem;
+  }
+
+  [class^="facilities-form__buttons-"] {
+    padding: .4rem;
+    border-radius: .3rem;
+    margin: .1rem;
+  }
+
+  #submitButton {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+
+  #submitButton:hover {
+    width: 8rem;
+  }
+
+  /* Results section */
+  .results {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hotel {
+    margin: 0 2rem;
+    width: 95%;
+  }
+
+  .hotel__details--name {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  .hotel__image {
+    width: 27rem;
+  }
+}
+
+
+/* Large desktop media query break point */
+
+@media only screen and (min-device-width: 1200px) {
+    .hotel {
+      width: 25%;
+    }
+
+    .hotel_image {
+      width: 40rem;
+    }
+
+}
